@@ -267,7 +267,55 @@
                     </svg>
                     <div class="absolute inset-0 rounded-t-lg lg:rounded-t-none lg:rounded-r-lg shadow-[inset_0px_0px_0px_1px_rgba(26,26,0,0.16)] dark:shadow-[inset_0px_0px_0px_1px_#fffaed2d]"></div>
                 </div>
-            </main>
+            <section class="section-retos">
+    <div class="container">
+        <h2 class="text-center mb-5" style="color: #00ff00; text-shadow: 0 0 10px #00ff00;">Retos y Competencias</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center mb-4">
+                <p class="lead" style="color: #fff;">Participa en emocionantes desafíos de ciberseguridad y pon a prueba tus habilidades</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-light border-success" style="box-shadow: 0 0 15px #00ff00;">
+                    <div class="card-body">
+                        <h4 class="card-title" style="color: #00ff00;">Capture The Flag (CTF)</h4>
+                        <p class="card-text">Compite en nuestro CTF especializado con desafíos de hacking ético, forense digital y criptografía.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-trophy" style="color: #00ff00;"></i> Premios para los ganadores</li>
+                            <li><i class="fas fa-users" style="color: #00ff00;"></i> Competencia individual y por equipos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-light border-success" style="box-shadow: 0 0 15px #00ff00;">
+                    <div class="card-body">
+                        <h4 class="card-title" style="color: #00ff00;">Demostraciones en Vivo</h4>
+                        <p class="card-text">Observa demostraciones en tiempo real de técnicas de hacking ético y aprende de expertos en ciberseguridad.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-laptop-code" style="color: #00ff00;"></i> Hacking en vivo</li>
+                            <li><i class="fas fa-shield-alt" style="color: #00ff00;"></i> Técnicas de defensa</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-light border-success" style="box-shadow: 0 0 15px #00ff00;">
+                    <div class="card-body">
+                        <h4 class="card-title" style="color: #00ff00;">Talleres Prácticos</h4>
+                        <p class="card-text">Participa en talleres interactivos donde podrás desarrollar tus habilidades en un entorno seguro y controlado.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-tools" style="color: #00ff00;"></i> Herramientas profesionales</li>
+                            <li><i class="fas fa-certificate" style="color: #00ff00;"></i> Certificado de participación</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
         </div>
 
         @if (Route::has('login'))

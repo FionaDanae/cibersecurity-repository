@@ -3,15 +3,70 @@
 @section('titulo', 'Servicios - Ciberseguridad')
 
 @section('content')
-<div class="bg-gray-900 min-h-screen">
+<style>
+    @keyframes buttonGlow {
+        0%, 100% {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(34, 211, 238, 0.8),
+                       0 0 30px rgba(34, 211, 238, 0.6),
+                       0 0 45px rgba(34, 211, 238, 0.4),
+                       0 0 60px rgba(34, 211, 238, 0.2);
+        }
+        50% {
+            transform: scale(1);
+            box-shadow: 0 0 20px rgba(34, 211, 238, 0.9),
+                       0 0 35px rgba(34, 211, 238, 0.7),
+                       0 0 50px rgba(34, 211, 238, 0.5),
+                       0 0 65px rgba(34, 211, 238, 0.3);
+        }
+    }
+
+    @keyframes neonFlicker {
+        0%, 100% {
+            opacity: 1;
+            text-shadow: 0 0 10px rgba(34, 211, 238, 0.8),
+                       0 0 20px rgba(34, 211, 238, 0.8),
+                       0 0 30px rgba(34, 211, 238, 0.8);
+        }
+        50% {
+            opacity: 0.8;
+            text-shadow: 0 0 5px rgba(34, 211, 238, 0.5),
+                       0 0 10px rgba(34, 211, 238, 0.5),
+                       0 0 15px rgba(34, 211, 238, 0.5);
+        }
+    }
+    .neon-title {
+        animation: neonFlicker 2s infinite;
+    }
+    
+    @keyframes checkmarkGlow {
+        0%, 100% {
+            filter: drop-shadow(0 0 15px rgba(34, 211, 238, 1))
+                   drop-shadow(0 0 25px rgba(34, 211, 238, 0.95))
+                   drop-shadow(0 0 35px rgba(34, 211, 238, 0.9))
+                   drop-shadow(0 0 45px rgba(34, 211, 238, 0.85));
+            transform: scale(1.25);
+        }
+        50% {
+            filter: drop-shadow(0 0 12px rgba(34, 211, 238, 0.95))
+                   drop-shadow(0 0 20px rgba(34, 211, 238, 0.9))
+                   drop-shadow(0 0 30px rgba(34, 211, 238, 0.85));
+            transform: scale(1.15);
+        }
+    }
+    .rounded-full:hover svg {
+        animation: checkmarkGlow 1.5s infinite;
+    }
+</style>
+<div class="bg-gray-0 min-h-screen">
     <!-- Hero Section -->
-    <div class="relative pt-16 pb-10 bg-gray-900">
+    <div class="relative pt-16 pb-10 bg-gray-0">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
-                <h1 class="text-4xl tracking-tight font-extrabold text-cyan-400 sm:text-5xl md:text-6xl">
+                <h1 class="text-4xl tracking-tight font-extrabold text-cyan-400 sm:text-5xl md:text-6xl neon-title">
                     Nuestros Servicios
-                </h1>
-                <p class="mt-3 max-w-2xl mx-auto text-base text-gray-300 sm:mt-5 sm:text-lg md:mt-5 md:text-xl">
+                </h1> 
+                <p class="mt-3 max-w-xl mx-auto text-base text-gray-300 sm:mt-5 sm:text-lg md:mt-5 md:text-xl">
                     Soluciones completas y personalizadas para proteger tu infraestructura digital contra las amenazas más sofisticadas.
                 </p>
             </div>
@@ -19,10 +74,10 @@
     </div>
 
     <!-- Services Detail Section -->
-    <div class="py-12 bg-gray-800">
+    <div class="py-12 bg-gray-0">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Service 1: Protección Avanzada -->
-            <div class="mb-20">
+            <div class="bg-gray-800/30 rounded-lg p-6 mb-20">
                 <div class="lg:flex lg:items-center lg:justify-between">
                     <div class="lg:w-1/2 lg:pr-12">
                         <div class="flex items-center">
@@ -81,13 +136,13 @@
                         </div>
                     </div>
                     <div class="mt-10 lg:mt-0 lg:w-1/2">
-                        <img class="rounded-lg shadow-xl object-cover h-80 w-full" src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Protección Avanzada">
+                        <img class="rounded-lg shadow-xl object-cover h-80 w-full" src="/images/proteccion avanzada.png" alt="Protección Avanzada">
                     </div>
                 </div>
             </div>
 
             <!-- Service 2: Monitoreo 24/7 -->
-            <div class="mb-20">
+            <div class="bg-gray-800/30 rounded-lg p-6 mb-20">
                 <div class="lg:flex lg:items-center lg:justify-between flex-row-reverse">
                     <div class="lg:w-1/2 lg:pl-12">
                         <div class="flex items-center">
@@ -146,13 +201,13 @@
                         </div>
                     </div>
                     <div class="mt-10 lg:mt-0 lg:w-1/2">
-                        <img class="rounded-lg shadow-xl object-cover h-80 w-full" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Monitoreo 24/7">
+                        <img class="rounded-lg shadow-xl object-cover h-80 w-full" src="/images/monitoreo.jpg" alt="Monitoreo 24/7">
                     </div>
                 </div>
             </div>
 
             <!-- Service 3: Análisis de Vulnerabilidades -->
-            <div>
+            <div class="bg-gray-800/30 rounded-lg p-6 mb-20">
                 <div class="lg:flex lg:items-center lg:justify-between">
                     <div class="lg:w-1/2 lg:pr-12">
                         <div class="flex items-center">
@@ -211,7 +266,7 @@
                         </div>
                     </div>
                     <div class="mt-10 lg:mt-0 lg:w-1/2">
-                        <img class="rounded-lg shadow-xl object-cover h-80 w-full" src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Análisis de Vulnerabilidades">
+                        <img class="rounded-lg shadow-xl object-cover h-80 w-full" src="/images/analisis-de-vulnerabilidades.png" alt="Análisis de Vulnerabilidades">
                     </div>
                 </div>
             </div>
@@ -227,7 +282,7 @@
             </h2>
             <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
                 <div class="inline-flex rounded-md shadow">
-                    <a href="/contacto" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-black bg-cyan-400 hover:bg-cyan-500 transition duration-300">
+                    <a href="/contacto" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-black bg-cyan-400 hover:bg-cyan-500 transition duration-300 hover:animate-[buttonGlow_2s_infinite]">
                         Solicitar consulta
                     </a>
                 </div>
