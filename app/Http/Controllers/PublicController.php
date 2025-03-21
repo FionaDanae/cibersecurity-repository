@@ -25,4 +25,8 @@ class PublicController extends Controller
     public function faq(){
         return view('public.faq');
     }
+
+    public function nosotros(){
+        return view('public.nosotros');
+    }
 }

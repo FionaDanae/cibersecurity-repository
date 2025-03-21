@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <script src="{{ asset('js/countdown.js') }}"></script>
     <style>
         body {
             font-family: 'Source Code Pro', monospace;
@@ -116,7 +117,8 @@
                 <div class="hidden lg:flex lg:gap-x-12">
                     <a href="{{route('inicio')}}" class="text-gray-100 hover:text-green-400 text-sm/6 font-semibold transition-colors duration-200">Inicio</a>
                     <a href="{{route('contacto')}}" class="text-gray-100 hover:text-green-400 text-sm/6 font-semibold transition-colors duration-200">Contacto</a>
-                    <a href="{{route('servicios')}}" class="text-gray-100 hover:text-green-400 text-sm/6 font-semibold transition-colors duration-200">Servicios</a>
+                    <a href="{{route('nosotros')}}" class="text-gray-100 hover:text-green-400 text-sm/6 font-semibold transition-colors duration-200">Nosotros</a>
+                    <a href="{{route('servicios')}}" class="text-gray-100 hover:text-green-400 text-sm/6 font-semibolvd transition-colors duration-200">Servicios</a>
                     <a href="{{route('recursos')}}" class="text-gray-100 hover:text-green-400 text-sm/6 font-semibold transition-colors duration-200">Recursos</a>
                     <a href="{{route('faq')}}" class="text-gray-100 hover:text-green-400 text-sm/6 font-semibold transition-colors duration-200">FAQ</a>
                 </div>
@@ -146,6 +148,7 @@
                             <div class="space-y-2 py-6">
                                 <a href="{{route('inicio')}}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-300 hover:bg-gray-800">Inicio</a>
                                 <a href="{{route('contacto')}}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-300 hover:bg-gray-800">Contacto</a>
+                                <a href="{{route('nosotros')}}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-300 hover:bg-gray-800">Nosotros</a>
                                 <a href="{{route('servicios')}}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-300 hover:bg-gray-800">Servicios</a>
                                 <a href="{{route('recursos')}}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-300 hover:bg-gray-800">Recursos</a>
                                 <a href="{{route('faq')}}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-300 hover:bg-gray-800">FAQ</a>
@@ -179,6 +182,7 @@
                         <h6 class="text-sm font-semibold leading-6 text-green-400">Compañia</h6>
                         <div class="mt-6 space-y-4">
                             <a href="{{route('contacto')}}" class="text-sm leading-6 text-gray-300 hover:text-green-400 transition-colors duration-200">Contacto</a>
+                            <div><a href="{{route('nosotros')}}" class="text-sm leading-6 text-gray-300 hover:text-green-400 transition-colors duration-200">Nosotros</a></div>
                             <div><a href="{{route('servicios')}}" class="text-sm leading-6 text-gray-300 hover:text-green-400 transition-colors duration-200">Servicios</a></div>
                             <div><a href="{{route('recursos')}}" class="text-sm leading-6 text-gray-300 hover:text-green-400 transition-colors duration-200">Recursos</a></div>
                             <div><a href="#" class="text-sm leading-6 text-gray-300 hover:text-green-400 transition-colors duration-200">FAQ</a></div>

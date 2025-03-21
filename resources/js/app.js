@@ -142,12 +142,12 @@ Aos.init({
             stats.innerHTML = stage.getFps();
         }, 300 );
     });
-
+    /*
     // add objects to stage and init
     stage.addObject( new Nebula() );
     stage.addObject( new Stars() );
     stage.addObject( new Planets() );
     stage.addObject( new Wormhole() );
     stage.init();
-
+    */
 })();

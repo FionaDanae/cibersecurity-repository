@@ -12,6 +12,10 @@ Route::controller(PublicController::class)->group(function(){
 });
 
 Route::controller(PublicController::class)->group(function(){
+    Route::get('/nosotros', 'nosotros')->name('nosotros');
+});
+
+Route::controller(PublicController::class)->group(function(){
     Route::get('/servicios', 'servicios')->name('servicios');
 });
 

@@ -169,6 +169,111 @@
         </div>
     </div>
 
+    <!-- Countdown Section -->
+    <div class="py-8 sm:py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="relative p-6 bg-black/80 border border-purple-500/30 rounded-lg transform hover:scale-105 transition-all duration-300 hover:border-purple-500 text-center">
+            <p class="mt-2 mb-8 text-lg sm:text-2xl md:text-3xl leading-8 font-extrabold tracking-tight text-white">Tiempo restante para el evento</p>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 max-w-3xl mx-auto">
+                    <div class="bg-black/90 border border-purple-500/30 p-3 sm:p-6 rounded-lg shadow-lg hover:shadow-purple-500/40 transition-all duration-300">
+                        <span id="days" class="block text-2xl sm:text-4xl font-bold text-purple-400 font-mono matrix-number">00</span>
+                        <span class="text-xs sm:text-sm text-purple-400/80 font-mono">Días</span>
+                    </div>
+                    <div class="bg-black/90 border border-purple-500/30 p-3 sm:p-6 rounded-lg shadow-lg hover:shadow-purple-500/40 transition-all duration-300 matrix-counter-box">
+                        <span id="hours" class="block text-2xl sm:text-4xl font-bold text-purple-400 font-mono matrix-number">00</span>
+                        <span class="text-xs sm:text-sm text-purple-400/80 font-mono">Horas</span>
+                    </div>
+                    <div class="bg-black/90 border border-purple-500/30 p-3 sm:p-6 rounded-lg shadow-lg hover:shadow-purple-500/40 transition-all duration-300 matrix-counter-box">
+                        <span id="minutes" class="block text-2xl sm:text-4xl font-bold text-purple-400 font-mono matrix-number">00</span>
+                        <span class="text-xs sm:text-sm text-purple-400/80 font-mono">Minutos</span>
+                    </div>
+                    <div class="bg-black/90 border border-purple-500/30 p-3 sm:p-6 rounded-lg shadow-lg hover:shadow-purple-500/40 transition-all duration-300 matrix-counter-box">
+                        <span id="seconds" class="block text-2xl sm:text-4xl font-bold text-purple-400 font-mono matrix-number">00</span>
+                        <span class="text-xs sm:text-sm text-purple-400/80 font-mono">Segundos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .matrix-counter-box {
+            position: relative;
+            overflow: hidden;
+        }
+        .matrix-counter-box::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(0252,5 00.1), transparent);
+            transform: rotate(45deg);
+            animation: shine 2s infinite;
+        }
+        @keyframes shine {
+            0% {
+                transform: translateX(-100%) rotate(45deg);
+            }
+         100% {
+                transform: translateX(100%) rotate(45deg);
+            }
+        }
+        .matrix-number {
+            text-shadow: 0 0 10px #0f0,
+ 0f0                0 0 20px #0f0,
+    0f0             0 0 30px #0f0;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% {
+                text-shadow: 0 0 10px #0f0,
+          0f0           0 0 20px #0f0,
+             0f0        0 0 30px #0f0;
+            }
+            50% {
+                text-shadow: 0 0 15px #0f0,
+                   0f0  0 0 25px #0f0,
+                      0f0 0 35px #0f0;
+            }
+        }
+</style>
+
+    <script>
+        // Set the date we're counting down to (adjust this to your event date)
+        const countDownDate = new Date("Dec 31, 2024 00:00:00").getTime();
+
+        // Update the countdown every 1 second
+        const countdownTimer = setInterval(function() {
+            // Get today's date and time
+            const now = new Date().getTime();
+
+            // Find the distance between now and the countdown date
+            const distance = countDownDate - now;
+
+            // Calculate days, hours, minutes and seconds
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the results
+            document.getElementById("days").textContent = String(days).padStart(2, '0');
+            document.getElementById("hours").textContent = String(hours).padStart(2, '0');
+            document.getElementById("minutes").textContent = String(minutes).padStart(2, '0');
+            document.getElementById("seconds").textContent = String(seconds).padStart(2, '0');
+
+            // If the countdown is finished, display expired message
+            if (distance < 0) {
+                clearInterval(countdownTimer);
+                document.getElementById("days").textContent = "00";
+                document.getElementById("hours").textContent = "00";
+                document.getElementById("minutes").textContent = "00";
+                document.getElementById("seconds").textContent = "00";
+            }
+        }, 1000);
+    </script>
+
     <!-- Schedule Section -->
     <div id="agenda" class="py-16 bg-gray-800/30">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -597,3 +702,7 @@
         }
     }
 </style>
+
+@section('scripts')
+<script src="{{ asset('js/countdown.js') }}"></script>
+@endsection
