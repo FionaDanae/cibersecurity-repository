@@ -116,20 +116,78 @@
 </div>
 
 <script>
-
-    document.querySelectorAll('button').forEach(button => {
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.border-gray-700 button').forEach(button => {
+        const content = button.querySelector('.mt-3');
+        const icon = button.querySelector('span');
+        
+        // Ocultar respuestas inicialmente
+        content.style.maxHeight = '0px';
+        content.style.opacity = '0';
+        content.style.overflow = 'hidden';
+        content.style.transition = 'max-height 0.3s ease-in-out, opacity 0.3s ease-in-out';
+        
         button.addEventListener('click', () => {
-            const content = button.querySelector('div:last-child');
-            const icon = button.querySelector('span');
+            const isExpanded = content.style.maxHeight !== '0px';
             
-            if (content.style.display === 'none' || !content.style.display) {
-                content.style.display = 'block';
+            if (!isExpanded) {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                content.style.opacity = '1';
                 icon.textContent = '-';
+                icon.style.transform = 'rotate(180deg)';
             } else {
-                content.style.display = 'none';
+                content.style.maxHeight = '0px';
+                content.style.opacity = '0';
                 icon.textContent = '+';
+                icon.style.transform = 'rotate(0deg)';
             }
         });
     });
+});
 </script>
+
+<style>
+.border-gray-700 button .mt-3 {
+    transition: max-height 0.3s ease-in-out,
+                opacity 0.3s ease-in-out,
+                visibility 0s linear 0.3s;
+    overflow: hidden;
+}
+
+.border-gray-700 button .mt-3[style*="visible"] {
+    transition: max-height 0.3s ease-in-out,
+                opacity 0.3s ease-in-out,
+                visibility 0s linear;
+}
+
+.border-gray-700 button span {
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.border-gray-700 button span.rotate-icon {
+    transform: rotate(180deg);
+}
+
+.border-gray-700 button:hover {
+    opacity: 0.9;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+</style>
 @endsection
