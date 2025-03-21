@@ -3,11 +3,13 @@
 @section('titulo','Nosotros')
 
 @section('content')
+
 <!-- About Congress Section -->
 <div class="matrix-bg fixed inset-0 z-0">
     <div class="matrix-rain"></div>
 </div>
-<div class="py-12 relative z-10">
+
+<div class="py-12 bg-gray-800/80 bg-opacity-50 relative z-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="lg:text-center mb-12">
             <h2 class="text-base text-blue-500 font-semibold tracking-wide uppercase">Sobre Nosotros</h2>
@@ -79,22 +81,21 @@
         <div class="lg:text-center mb-12">
             <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">Alianzas</p>
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
             <!-- Partner Logos -->
-            <div class="matrix-card p-6 rounded-lg flex items-center justify-center transition-all duration-300 hover:shadow-[0_0_15px_#ffffff,0_0_30px_rgba(255,255,255,0.3),0_0_45px_rgba(255,255,255,0.1)] hover:border-white hover:border hover:bg-gray-800/90 hover:transform hover:-translate-y-1">
-                <img src="{{ asset('images/partners/partner1.png') }}" alt="Partner 1" class="max-h-16">
+            <div class="bg-gray-900/90 p-8 rounded-lg flex items-center justify-center transform hover:scale-105 transition-all duration-300 hover:border-2 hover:border-white">
+                <img src="{{ asset('images/logo_fcc.png') }}" alt="Partner 1" class="max-h-32">
             </div>
-            <div class="matrix-card p-6 rounded-lg flex items-center justify-center transition-all duration-300 hover:shadow-[0_0_15px_#ffffff,0_0_30px_rgba(255,255,255,0.3),0_0_45px_rgba(255,255,255,0.1)] hover:border-white hover:border hover:bg-gray-800/90 hover:transform hover:-translate-y-1">
-                <img src="{{ asset('images/partners/partner2.png') }}" alt="Partner 2" class="max-h-16">
+             
+            <div class="bg-gray-900/90 p-8 rounded-lg flex items-center justify-center transform hover:scale-105 transition-all duration-300 hover:border-2 hover:border-white">
+                <img src="{{ asset('images/Cisco.webp') }}" alt="Partner 2" class="max-h-32">
             </div>
-            <div class="matrix-card p-6 rounded-lg flex items-center justify-center transition-all duration-300 hover:shadow-[0_0_15px_#ffffff,0_0_30px_rgba(255,255,255,0.3),0_0_45px_rgba(255,255,255,0.1)] hover:border-white hover:border hover:bg-gray-800/90 hover:transform hover:-translate-y-1">
-                <img src="{{ asset('images/partners/partner3.png') }}" alt="Partner 3" class="max-h-16">
-            </div>
-            <div class="matrix-card p-6 rounded-lg flex items-center justify-center transition-all duration-300 hover:shadow-[0_0_15px_#ffffff,0_0_30px_rgba(255,255,255,0.3),0_0_45px_rgba(255,255,255,0.1)] hover:border-white hover:border hover:bg-gray-800/90 hover:transform hover:-translate-y-1">
-                <img src="{{ asset('images/partners/partner4.png') }}" alt="Partner 4" class="max-h-16">
+            <div class="bg-gray-900/90 p-8 rounded-lg flex items-center justify-center transform hover:scale-105 transition-all duration-300 hover:border-2 hover:border-white">
+                <img src="{{ asset('images/ISACA.jpg') }}" alt="Partner 3" class="max-h-32">
             </div>
         </div>
     </div>
 </div>
+@endsection
 @endsection
     
