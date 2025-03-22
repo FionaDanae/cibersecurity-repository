@@ -118,7 +118,7 @@
                     <a href="{{route('inicio')}}" class="text-gray-100 hover:text-green-400 text-sm/6 font-semibold transition-colors duration-200">Inicio</a>
                     <a href="{{route('contacto')}}" class="text-gray-100 hover:text-green-400 text-sm/6 font-semibold transition-colors duration-200">Contacto</a>
                     <a href="{{route('nosotros')}}" class="text-gray-100 hover:text-green-400 text-sm/6 font-semibold transition-colors duration-200">Nosotros</a>
-                    <a href="{{route('servicios')}}" class="text-gray-100 hover:text-green-400 text-sm/6 font-semibolvd transition-colors duration-200">Servicios</a>
+                    <a href="{{route('servicios')}}" class="text-gray-100 hover:text-green-400 text-sm/6 font-semibold transition-colors duration-200">Servicios</a>
                     <a href="{{route('recursos')}}" class="text-gray-100 hover:text-green-400 text-sm/6 font-semibold transition-colors duration-200">Recursos</a>
                     <a href="{{route('register')}}" class="text-gray-100 hover:text-green-400 text-sm/6 font-semibold transition-colors duration-200">Registro</a>
                     <a href="{{route('faq')}}" class="text-gray-100 hover:text-green-400 text-sm/6 font-semibold transition-colors duration-200">FAQ</a>
