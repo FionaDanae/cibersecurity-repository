@@ -120,10 +120,11 @@
                     <a href="{{route('nosotros')}}" class="text-gray-100 hover:text-green-400 text-sm/6 font-semibold transition-colors duration-200">Nosotros</a>
                     <a href="{{route('servicios')}}" class="text-gray-100 hover:text-green-400 text-sm/6 font-semibolvd transition-colors duration-200">Servicios</a>
                     <a href="{{route('recursos')}}" class="text-gray-100 hover:text-green-400 text-sm/6 font-semibold transition-colors duration-200">Recursos</a>
+                    <a href="{{route('register')}}" class="text-gray-100 hover:text-green-400 text-sm/6 font-semibold transition-colors duration-200">Registro</a>
                     <a href="{{route('faq')}}" class="text-gray-100 hover:text-green-400 text-sm/6 font-semibold transition-colors duration-200">FAQ</a>
                 </div>
                 <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-                    <a href="#" class="text-gray-100 hover:text-green-400 text-sm/6 font-semibold transition-colors duration-200">Log in <span aria-hidden="true" class="group-hover:translate-x-1 transition-transform duration-200">&rarr;</span></a>
+                    <a href="{{route('login')}}" class="text-gray-100 hover:text-green-400 text-sm/6 font-semibold transition-colors duration-200">Log in <span aria-hidden="true" class="group-hover:translate-x-1 transition-transform duration-200">&rarr;</span></a>
                 </div>
             </nav>
             <!-- Mobile menu -->
@@ -151,10 +152,11 @@
                                 <a href="{{route('nosotros')}}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-300 hover:bg-gray-800">Nosotros</a>
                                 <a href="{{route('servicios')}}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-300 hover:bg-gray-800">Servicios</a>
                                 <a href="{{route('recursos')}}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-300 hover:bg-gray-800">Recursos</a>
-                                <a href="{{route('faq')}}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-300 hover:bg-gray-800">FAQ</a>
+                                <a href="{{route('register')}}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-300 hover:bg-gray-800">Registro</a>
+                                <a href="{{route('faq')}}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-300 hover:bg-gray-800">FAQ</a>                                
                             </div>
                             <div class="py-6">
-                                <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-300 hover:bg-gray-800">Log in</a>
+                                <a href="{{route('login')}}" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-300 hover:bg-gray-800">Log in</a>
                             </div>
                         </div>
                     </div>
@@ -185,7 +187,8 @@
                             <div><a href="{{route('nosotros')}}" class="text-sm leading-6 text-gray-300 hover:text-green-400 transition-colors duration-200">Nosotros</a></div>
                             <div><a href="{{route('servicios')}}" class="text-sm leading-6 text-gray-300 hover:text-green-400 transition-colors duration-200">Servicios</a></div>
                             <div><a href="{{route('recursos')}}" class="text-sm leading-6 text-gray-300 hover:text-green-400 transition-colors duration-200">Recursos</a></div>
-                            <div><a href="#" class="text-sm leading-6 text-gray-300 hover:text-green-400 transition-colors duration-200">FAQ</a></div>
+                            <div><a href="{{route('register')}}" class="text-sm leading-6 text-gray-300 hover:text-green-400 transition-colors duration-200">Registro</a></div>
+                            <div><a href="{{route('faq')}}" class="text-sm leading-6 text-gray-300 hover:text-green-400 transition-colors duration-200">FAQ</a></div>
                         </div>
                     </div>
                     <div>
