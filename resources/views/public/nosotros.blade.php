@@ -114,7 +114,7 @@
                     <div class="flex items-center">
                         <div class="ml-3">
                             <p class="text-sm font-medium text-blue-400">María González</p>
-                            <p class="text-sm text-gray-300">Estudiante - Edición 2023</p>
+                            <p class="text-sm text-gray-300">Estudiante - Edición 2024</p>
                         </div>
                     </div>
                 </div>
@@ -123,7 +123,7 @@
                     <div class="flex items-center">
                         <div class="ml-3">
                             <p class="text-sm font-medium text-blue-400">David Martínez</p>
-                            <p class="text-sm text-gray-300">Profesional IT - Edición 2023</p>
+                            <p class="text-sm text-gray-300">Profesional IT - Edición 2024</p>
                         </div>
                     </div>
                 </div>
@@ -132,7 +132,7 @@
                     <div class="flex items-center">
                         <div class="ml-3">
                             <p class="text-sm font-medium text-blue-400">Ana Pérez</p>
-                            <p class="text-sm text-gray-300">Security Analyst - Edición 2022</p>
+                            <p class="text-sm text-gray-300">Security Analyst - Edición 2024</p>
                         </div>
                     </div>
                 </div>
