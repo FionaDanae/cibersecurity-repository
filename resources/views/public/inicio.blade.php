@@ -75,7 +75,7 @@
                 <main class="mt-6 sm:mt-10 mx-auto max-w-7xl px-4 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
                     <div class="sm:text-center lg:text-left">
                         <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-tight font-extrabold matrix-heading font-inter">
-                            <span class="block mb-1 sm:mb-2 text-white">Garcia Tu Patron</span>
+                            <span class="block mb-1 sm:mb-2 text-white">Congreso Internacional de Ciberseguridad</span>
                             <span class="block text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">Descubre las <span id="typed-container" class="inline-block min-w-[120px] sm:min-w-[150px] md:min-w-[180px]"><span id="typed"></span></span></span>
                         </h1>
                         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
